@@ -23,9 +23,14 @@ function Hero() {
                 <Canvas className="w-full h-full">
                     <Suspense fallback={ CanvasLoader }>
                         <PerspectiveCamera makeDefault position={[0,0,30]} />
-                        <HackerRoom />
+
+                        {/* Hacker Room component here */}  
+                        <HackerRoom scale={0.08} position={[0,0,0]} rotation={[0, 280, 0]}/>
+
+                        {/* Lighting for the scene */}
+                        <ambientLight intensity={1} />
+                        <directionalLight intensity={0.5} position={[10,10,10]}/>
                     </Suspense>
-                    {/* Hacker Room component here */}
                 </Canvas>
             </div>
         </section>
