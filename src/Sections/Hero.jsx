@@ -1,6 +1,7 @@
 import React, { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { PerspectiveCamera } from '@react-three/drei'
+import { Leva, useControls } from 'leva'
 
 
 // Component imports 
@@ -8,6 +9,44 @@ import HackerRoom from '../components/HackerRoom'
 import CanvasLoader from '../components/CanvasLoader'
 
 function Hero() {
+
+    const controls = useControls('HackerRoom', {
+        scale: {
+            value: 2.5,
+            min: -10,
+            max: 10
+        },
+        positionX: {
+            value: 2.5,
+            min: -10,
+            max: 10
+        },
+        positionY: {
+            value: 2.5,
+            min: -10,
+            max: 10
+        },positionZ: {
+            value: 2.5,
+            min: -10,
+            max: 10
+        },
+        rotationX: {
+            value: 0,
+            min: -10,
+            max: 10
+        },
+        rotationY: {
+            value: 2.5,
+            min: -10,
+            max: 10
+        },
+        rotationZ: {
+            value: 2.5,
+            min: -10,
+            max: 10
+        },
+    })
+
     return (
         <section className="min-h-screen w-full flex-col relative">
             <div className="w-full mx-auto flex-col sm:mt-36 mt-20 c-space gap-3">
@@ -20,12 +59,22 @@ function Hero() {
             </div>
 
             <div className="w-full h-full absolute inset-0">
+                {/* Lets you control the properties of 3D models directly from the browser */}
+                <Leva />
+
                 <Canvas className="w-full h-full">
                     <Suspense fallback={ CanvasLoader }>
                         <PerspectiveCamera makeDefault position={[0,0,30]} />
 
                         {/* Hacker Room component here */}  
-                        <HackerRoom scale={0.08} position={[0,0,0]} rotation={[0, 280, 0]}/>
+                        <HackerRoom 
+                            // scale={0.08} 
+                            // position={[0,0,0]} 
+                            // rotation={[0, 280, 0]}
+                            scale = {[controls.scale, controls.scale, controls.scale,]}
+                            position = {[controls.positionX, controls.positionY, controls.positionZ]}
+                            rotation = {[controls.rotationX, controls.rotationY, controls.rotationZ]}
+                        />
 
                         {/* Lighting for the scene */}
                         <ambientLight intensity={1} />
