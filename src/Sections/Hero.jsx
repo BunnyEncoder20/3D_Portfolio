@@ -9,9 +9,17 @@ import { useMediaQuery } from 'react-responsive';
 import HackerRoom from '../components/HackerRoom'
 import CanvasLoader from '../components/CanvasLoader'
 
+// Custom Functions
+import { calculateSizes } from '../utils/CalculateSizes';
+
 function Hero() {
 
+    const isMini = useMediaQuery({ maxWidth: 440});
     const isMobile = useMediaQuery({ maxWidth:768});
+    const isTablet = useMediaQuery({ minWidth: 768,maxWidth:1024});
+
+    const sizes = calculateSizes(isMini, isMobile, isTablet)
+
     const controls = useControls('HackerRoom', {
         scale: {
             value: 2.5,
@@ -66,7 +74,7 @@ function Hero() {
 
                 <Canvas className="w-full h-full">
                     <Suspense fallback={ <CanvasLoader /> }>
-                        <PerspectiveCamera makeDefault position={[0,0,30]} />
+                        <PerspectiveCamera makeDefault position={[0,0,20]} />
 
                         {/* Hacker Room component here */}  
                         <HackerRoom 
