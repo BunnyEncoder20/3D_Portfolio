@@ -1,6 +1,6 @@
 import React, { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
-import { PerspectiveCamera } from '@react-three/drei';
+import { PerspectiveCamera, Ring } from '@react-three/drei';
 import { Leva, useControls } from 'leva';
 import { useMediaQuery } from 'react-responsive';
 
@@ -9,6 +9,9 @@ import { useMediaQuery } from 'react-responsive';
 import HackerRoom from '../components/HackerRoom'
 import CanvasLoader from '../components/CanvasLoader'
 import Target from '../components/Target';
+import ReactLogo from '../components/ReactLogo';
+import Cube from '../components/Cube';
+import Rings from '../components/Rings';
 
 // Custom Functions
 import { calculateSizes } from '../utils/CalculateSizes';
@@ -93,6 +96,9 @@ function Hero() {
                         <group>
                             {/* Floating Icons */}
                             <Target position={ responsive3D.targetPosition } />
+                            <ReactLogo position={ responsive3D.reactLogoPosition } />
+                            <Cube position={ responsive3D.cubePosition } />
+                            <Rings position={ responsive3D.ringPosition } />
                         </group>
 
                         {/* Lighting for the scene */}
