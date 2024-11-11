@@ -1,7 +1,8 @@
-import React, { Suspense } from 'react'
-import { Canvas } from '@react-three/fiber'
-import { PerspectiveCamera } from '@react-three/drei'
-import { Leva, useControls } from 'leva'
+import React, { Suspense } from 'react';
+import { Canvas } from '@react-three/fiber';
+import { PerspectiveCamera } from '@react-three/drei';
+import { Leva, useControls } from 'leva';
+import { useMediaQuery } from 'react-responsive';
 
 
 // Component imports 
@@ -10,6 +11,7 @@ import CanvasLoader from '../components/CanvasLoader'
 
 function Hero() {
 
+    const isMobile = useMediaQuery({ maxWidth:768});
     const controls = useControls('HackerRoom', {
         scale: {
             value: 2.5,
@@ -63,17 +65,18 @@ function Hero() {
                 <Leva />
 
                 <Canvas className="w-full h-full">
-                    <Suspense fallback={ CanvasLoader }>
+                    <Suspense fallback={ <CanvasLoader /> }>
                         <PerspectiveCamera makeDefault position={[0,0,30]} />
 
                         {/* Hacker Room component here */}  
                         <HackerRoom 
-                            // scale={0.08} 
-                            // position={[0,0,0]} 
-                            // rotation={[0, 280, 0]}
-                            scale = {[controls.scale, controls.scale, controls.scale,]}
-                            position = {[controls.positionX, controls.positionY, controls.positionZ]}
-                            rotation = {[controls.rotationX, controls.rotationY, controls.rotationZ]}
+                            scale={ isMobile ? 0.07 : 0.125} 
+                            position={[0.9,isMobile ? 1 : -8.0,1.3]} 
+                            // rotation={[-2.8, -6.3, -3.15]}
+                            rotation={[0.4, -Math.PI, 0]}
+                            // scale = {[controls.scale, controls.scale, controls.scale,]}
+                            // position = {[controls.positionX, controls.positionY, controls.positionZ]}
+                            // rotation = {[controls.rotationX, controls.rotationY, controls.rotationZ]}
                         />
 
                         {/* Lighting for the scene */}
