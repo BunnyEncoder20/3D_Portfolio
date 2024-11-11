@@ -8,6 +8,7 @@ import { useMediaQuery } from 'react-responsive';
 // Component imports 
 import HackerRoom from '../components/HackerRoom'
 import CanvasLoader from '../components/CanvasLoader'
+import Target from '../components/Target';
 
 // Custom Functions
 import { calculateSizes } from '../utils/CalculateSizes';
@@ -18,44 +19,45 @@ function Hero() {
     const isMobile = useMediaQuery({ maxWidth:768});
     const isTablet = useMediaQuery({ minWidth: 768,maxWidth:1024});
 
-    const sizes = calculateSizes(isMini, isMobile, isTablet)
+    const responsive3D = calculateSizes(isMini, isMobile, isTablet)
 
-    const controls = useControls('HackerRoom', {
-        scale: {
-            value: 2.5,
-            min: -10,
-            max: 10
-        },
-        positionX: {
-            value: 2.5,
-            min: -10,
-            max: 10
-        },
-        positionY: {
-            value: 2.5,
-            min: -10,
-            max: 10
-        },positionZ: {
-            value: 2.5,
-            min: -10,
-            max: 10
-        },
-        rotationX: {
-            value: 0,
-            min: -10,
-            max: 10
-        },
-        rotationY: {
-            value: 2.5,
-            min: -10,
-            max: 10
-        },
-        rotationZ: {
-            value: 2.5,
-            min: -10,
-            max: 10
-        },
-    })
+    // Uncomment to get Leve controls 
+    // const controls = useControls('HackerRoom', {
+    //     scale: {
+    //         value: 2.5,
+    //         min: -10,
+    //         max: 10
+    //     },
+    //     positionX: {
+    //         value: 2.5,
+    //         min: -10,
+    //         max: 10
+    //     },
+    //     positionY: {
+    //         value: 2.5,
+    //         min: -10,
+    //         max: 10
+    //     },positionZ: {
+    //         value: 2.5,
+    //         min: -10,
+    //         max: 10
+    //     },
+    //     rotationX: {
+    //         value: 0,
+    //         min: -10,
+    //         max: 10
+    //     },
+    //     rotationY: {
+    //         value: 2.5,
+    //         min: -10,
+    //         max: 10
+    //     },
+    //     rotationZ: {
+    //         value: 2.5,
+    //         min: -10,
+    //         max: 10
+    //     },
+    // })
 
     return (
         <section className="min-h-screen w-full flex-col relative">
@@ -78,14 +80,20 @@ function Hero() {
 
                         {/* Hacker Room component here */}  
                         <HackerRoom 
-                            scale={ isMobile ? 0.07 : 0.125} 
-                            position={[0.9,isMobile ? 1 : -8.0,1.3]} 
-                            // rotation={[-2.8, -6.3, -3.15]}
+                            scale={ responsive3D.deskScale } 
+                            position={ responsive3D.deskPosition } 
                             rotation={[0.4, -Math.PI, 0]}
+
+                            // For leva controls
                             // scale = {[controls.scale, controls.scale, controls.scale,]}
                             // position = {[controls.positionX, controls.positionY, controls.positionZ]}
                             // rotation = {[controls.rotationX, controls.rotationY, controls.rotationZ]}
                         />
+
+                        <group>
+                            {/* Floating Icons */}
+                            <Target position={ responsive3D.targetPosition } />
+                        </group>
 
                         {/* Lighting for the scene */}
                         <ambientLight intensity={1} />
