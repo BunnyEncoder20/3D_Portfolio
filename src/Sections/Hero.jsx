@@ -13,6 +13,7 @@ import Target from '../components/Target';
 import ReactLogo from '../components/ReactLogo';
 import Cube from '../components/Cube';
 import Rings from '../components/Rings';
+import Button from '../components/Button';
 
 // Custom Functions
 import { calculateSizes } from '../utils/CalculateSizes';
@@ -110,6 +111,14 @@ function Hero() {
                         <directionalLight intensity={0.5} position={[10,10,10]}/>
                     </Suspense>
                 </Canvas>
+            </div>
+
+            {/* Button to take to next section */}
+            <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space">
+                <a href="#contact" className="w-fit">
+                    {/* This button is a custom comp */}
+                    <Button name="Let's work together" isBeam containerClass="sw:w-fit w-full sm:min-w-96" />
+                </a>
             </div>
         </section>
     )
