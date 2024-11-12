@@ -18,7 +18,7 @@ import Button from '../components/Button';
 // Custom Functions
 import { calculateSizes } from '../utils/CalculateSizes';
 
-function Hero() {
+const Hero = () => {
 
     const isMini = useMediaQuery({ maxWidth: 440});
     const isMobile = useMediaQuery({ maxWidth:768});
@@ -108,7 +108,7 @@ function Hero() {
 
                         {/* Lighting for the scene */}
                         <ambientLight intensity={1} />
-                        <directionalLight intensity={0.5} position={[10,10,10]}/>
+                        <directionalLight intensity={2.5} position={[10,10,10]}/>
                     </Suspense>
                 </Canvas>
             </div>
