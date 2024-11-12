@@ -1,12 +1,13 @@
 import React, { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
-import { PerspectiveCamera, Ring } from '@react-three/drei';
+import { PerspectiveCamera } from '@react-three/drei';
 import { Leva, useControls } from 'leva';
 import { useMediaQuery } from 'react-responsive';
 
 
 // Component imports 
 import HackerRoom from '../components/HackerRoom'
+import HeroCamera from '../components/HeroCamera';
 import CanvasLoader from '../components/CanvasLoader'
 import Target from '../components/Target';
 import ReactLogo from '../components/ReactLogo';
@@ -81,17 +82,20 @@ function Hero() {
                     <Suspense fallback={ <CanvasLoader /> }>
                         <PerspectiveCamera makeDefault position={[0,0,20]} />
 
+                        {/* Camera for the main 3D model */}
+                        <HeroCamera isMobile={ isMobile }>
                         {/* Hacker Room component here */}  
-                        <HackerRoom 
-                            scale={ responsive3D.deskScale } 
-                            position={ responsive3D.deskPosition } 
-                            rotation={[0.4, -Math.PI, 0]}
+                            <HackerRoom 
+                                scale={ responsive3D.deskScale } 
+                                position={ responsive3D.deskPosition } 
+                                rotation={[0.4, -Math.PI, 0]}
 
-                            // For leva controls
-                            // scale = {[controls.scale, controls.scale, controls.scale,]}
-                            // position = {[controls.positionX, controls.positionY, controls.positionZ]}
-                            // rotation = {[controls.rotationX, controls.rotationY, controls.rotationZ]}
-                        />
+                                // For leva controls
+                                // scale = {[controls.scale, controls.scale, controls.scale,]}
+                                // position = {[controls.positionX, controls.positionY, controls.positionZ]}
+                                // rotation = {[controls.rotationX, controls.rotationY, controls.rotationZ]}
+                            />
+                        </HeroCamera>
 
                         <group>
                             {/* Floating Icons */}

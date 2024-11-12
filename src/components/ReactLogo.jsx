@@ -5,7 +5,7 @@ const ReactLogo = (props) => {
   const { nodes, materials } = useGLTF('/models/react.glb')
   return (
     <Float dispose={null}>
-      <group scale={0.3} position={[8,8,0]} {...props} dispose={null}>
+      <group scale={0.5} position={[8,8,0]} {...props} dispose={null}>
         <mesh
           geometry={nodes['React-Logo_Material002_0'].geometry}
           material={materials['Material.002']}
