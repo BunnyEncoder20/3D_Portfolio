@@ -36,8 +36,8 @@ const Projects = () => {
 				My Works
 			</p>
 			
-			{/* Project Left side container */}
 			<div className="grid lg:grid-cols-2 grid-cols-1 mt-12 gap-5 w-full">
+				{/* Project Left side container */}
 				<div className="flex flex-col gap-5 relative sm:p-10 py-10 px-5 shadow-2xl shadow-black-200">
 					{/* Project Image */}
 					<div className="absolute top-0 right-0">
@@ -75,7 +75,7 @@ const Projects = () => {
 						</div>
 
 						{/* Live deployment link arrow */}
-						<a href={currentProject.href} className='flex items-center gap-2 cursor-pointer text-white-600' target='_blank' rel='noreferrer'>
+						<a className='flex items-center gap-2 cursor-pointer text-white-600' href={currentProject.href}  target='_blank' rel='noreferrer'>
 							<p> Check live Site</p>
 							<img src="/assets/arrow-up.png" alt="up arrow"  className='w-3 h-3'/>
 						</a>
@@ -90,31 +90,32 @@ const Projects = () => {
 							<img src="/assets/right-arrow.png" alt="right arrow" className="w-4 h-4" />
 						</button>
 					</div>
+				</div>
 
+				{/* Project Right side container - 3D Demo */}
+				<div className="border border-black-300 bg-black-200 rounded-lg h-96 md:h-full">
+					<Canvas>
+						<ambientLight intensity={Math.PI}/>
+						<directionalLight position={[10, 10, 5]} intensity={1}/>
+
+						<Center>
+							<Suspense fallback={CanvasLoader}>
+								<group scale={2} position={[0,-3,0]} rotation={[0, -0.1, 0]}>
+									<DemoComputer texture={currentProject.texture} />
+								</group>
+							</Suspense>
+						</Center>
+
+						{/* Orbit controls */}
+						<OrbitControls 
+							maxPolarAngle={Math.PI/2}
+							enableZoom={false}
+						/>
+					</Canvas>
 				</div>
 			</div>
 
-			{/* Project Right side container - 3D Demo */}
-			<div className="border border-black-300 bg-black-200 rounded-lg h-96 md:h-full">
-				<Canvas>
-					<ambientLight intensity={Math.PI}/>
-					<directionalLight position={[10, 10, 5]} intensity={1}/>
-
-					<Center>
-						<Suspense fallback={CanvasLoader}>
-							<group scale={2} position={[0,-3,0]} rotation={[0, -0.1, 0]}>
-								<DemoComputer texture={currentProject.texture} />
-							</group>
-						</Suspense>
-					</Center>
-
-					{/* Orbit controls */}
-					<OrbitControls 
-						maxPolarAngle={Math.PI/2}
-						enableZoom={false}
-					/>
-				</Canvas>
-			</div>
+			
 		</section>
 	)
 }
