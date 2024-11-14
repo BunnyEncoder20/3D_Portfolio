@@ -8,6 +8,7 @@ import Projects from "./sections/Projects";
 import Clients from "./sections/Clients";
 import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
+import Experience from "./sections/Experience";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Hero />
       <About />
       <Projects />
+	  <Experience />
       <Clients />
       <Contact />
       <Footer />

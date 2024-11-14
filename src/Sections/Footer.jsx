@@ -71,6 +71,7 @@ const Footer = () => {
           </div>
         </a>
       </div>
+	  <p className="text-white-500">©️ 2024 Varun Verma. On the Grind 💪</p>
     </section>
   );
 };
