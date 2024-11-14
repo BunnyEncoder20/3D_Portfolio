@@ -1,23 +1,23 @@
-import React from 'react'
-import { Float, useGLTF } from '@react-three/drei'
+import React from "react";
+import { Float, useGLTF } from "@react-three/drei";
 
 const ReactLogo = (props) => {
-  const { nodes, materials } = useGLTF('/models/react.glb')
+  const { nodes, materials } = useGLTF("/models/react.glb");
   return (
     <Float dispose={null}>
-      <group scale={0.5} position={[8,8,0]} {...props} dispose={null}>
+      <group scale={0.5} position={[8, 8, 0]} {...props} dispose={null}>
         <mesh
-          geometry={nodes['React-Logo_Material002_0'].geometry}
-          material={materials['Material.002']}
+          geometry={nodes["React-Logo_Material002_0"].geometry}
+          material={materials["Material.002"]}
           position={[0, 0.079, 0.181]}
           rotation={[0, 0, -Math.PI / 2]}
-          scale={[0.39,0.39,0.5]}
+          scale={[0.39, 0.39, 0.5]}
         />
       </group>
     </Float>
-  )
-}
+  );
+};
 
-useGLTF.preload('/models/react.glb');
+useGLTF.preload("/models/react.glb");
 
-export default ReactLogo
+export default ReactLogo;
