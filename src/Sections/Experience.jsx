@@ -1,9 +1,12 @@
-import React from 'react'
-import { Canvas } from '@react-three/fiber'
+import React, { Suspense } from 'react';
+import { Canvas } from '@react-three/fiber';
+
+// Import components
+import CanvasLoader from '../components/CanvasLoader';
 
 // importing data 
-import { workExperiences } from '../constants'
-import { div } from 'three/webgpu'
+import { workExperiences } from '../constants';
+import Developer from '../components/Developer';
 
 
 const Experience = () => {
@@ -19,7 +22,14 @@ const Experience = () => {
 				{/* Canvas */}
 				<div className='work-canvas'>
 					<Canvas>
+						<ambientLight intensity={7} />
+						<spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
+						<directionalLight position={[10, 10, 10]} intensity={1} />
 
+						<OrbitalControls  enableZoom={false} maxPolarAngle={Math.PI / 2} />
+						<Suspense fallback={ CanvasLoader }>
+							<Developer position-y={-3} scale={3} />
+						</Suspense>
 					</Canvas>
 				</div>
 
