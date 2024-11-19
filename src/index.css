@@ -13,6 +13,42 @@ body {
   font-family: "General Sans", sans-serif;
 }
 
+
+.highlight {
+	background-color: #f0a500; 
+	color: #000; 
+	padding: 0 2px; 
+	border-radius: 4px; 
+	font-weight: bold; 
+} 
+
+.globe-container {
+	position: relative; /* Ensures tooltip is positioned relative to the globe container */
+}
+
+.tooltip {
+	position: absolute;
+	bottom: 85%; /* Position above the globe */
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 8px 12px;
+	background-color: rgba(0, 0, 0, 0.75);
+	color: white;
+	font-size: 14px;
+	border-radius: 6px;
+	white-space: nowrap;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.3s ease, transform 0.3s ease;
+	z-index: 10;
+}
+
+.globe-container:hover .tooltip {
+	opacity: 1;
+	transform: translateX(-50%) translateY(-5px); /* Add a slight floating effect */
+}
+
+
 @layer utilities {
   .c-space {
     @apply sm:px-10 px-5;

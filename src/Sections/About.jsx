@@ -3,6 +3,7 @@ import Globe from "react-globe.gl";
 
 // Component Imports
 import Button from "../components/Button";
+import { color } from "three/webgpu";
 
 const About = () => {
   // State to track if email was copied
@@ -29,10 +30,9 @@ const About = () => {
               className="w-full sm:h-[276px] h-fit object-contain"
             />
             <div>
-              <p className="grid-headtext">Hi I am Varun Verma</p>
+              <p className="grid-headtext">Hi there, I am <span className="highlight">Varun Verma</span></p>
               <p className="grid-subtext">
-                With a passiong for coding I honed my skills in Full Stack with
-                a focus on backend technologies
+                With a passion for coding, I have honed my skills in <span className="highlight">Full Stack</span> development with a focus on backend technologies.
               </p>
             </div>
           </div>
@@ -49,8 +49,7 @@ const About = () => {
             <div>
               <p className="grid-headtext">Tech Stack</p>
               <p className="grid-subtext">
-                I spealize in Javascript and Python with a focus on MERN
-                technologies
+                I spealize in <span className="highlight">Javascript</span> and <span className="highlight">Python</span> with a experience in MERN stack applications.
               </p>
             </div>
           </div>
@@ -59,7 +58,7 @@ const About = () => {
         {/* Grid 3 */}
         <div className="col-span-1 xl:row-span-4">
           <div className="grid-container">
-            <div className="rounded-3xl w-full sm:h-[326px] h-fit flex justify-center items-center">
+            <div className="rounded-3xl w-full sm:h-[326px] h-fit flex justify-center items-center relative globe-container">
               <Globe
                 height={326}
                 width={326}
@@ -69,15 +68,25 @@ const About = () => {
                 showGraticules
                 globeImageUrl="//unpkg.com/three-globe/example/img/earth-day.jpg"
                 bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
-                labelsData={[{
-                  lat: 19.0760,
-                  lng: 72.8777,
-                  text: "I'm here!",
-                  color: "white",
-                  size: 20,
-                }]}
-                labelSize={3}
+                labelsData={[
+					{
+						lat: 19.0760,
+						lng: 72.8777,
+						text: "I'm here!",
+						color: "white",
+						size: 20,
+                	},
+					{
+						lat: 30.5937,
+						lng: 78.9629,
+						text: "India",
+						color: "white",
+						size: 20,
+					}
+				]}
+                labelSize={5}
               />
+			  <div className="tooltip">This Earth is fully interactable! Try it!</div>
             </div>
 
             <div>
