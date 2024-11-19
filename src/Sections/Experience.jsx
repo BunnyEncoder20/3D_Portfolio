@@ -22,7 +22,7 @@ const Experience = () => {
 			<div className="work-container">
 
 				{/* Canvas */}
-				<div className='work-canvas'>
+				<div className='work-canvas globe-container'>
 					<Canvas>
 						<ambientLight intensity={7} />
 						<spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
@@ -33,6 +33,7 @@ const Experience = () => {
 							<Developer position-y={-3} scale={3} animationName={ animationName } />
 						</Suspense>
 					</Canvas>
+					<div className='tooltip'> Spin me around !</div>
 				</div>
 
 				{/* Work Content */}

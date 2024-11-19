@@ -91,11 +91,10 @@ const About = () => {
 
             <div>
               <p className="grid-headtext">
-                I’m very flexible with almost all time zone communications &
-                locations
+                I’m very flexible with almost all time zones
               </p>
               <p className="grid-subtext">
-                I'm based in Mumbai India, open to remote work worldwide.
+                I'm based in Mumbai <span className="highlight">India</span>, open to remote work worldwide.
               </p>
               <a href="#contact">
                 <Button

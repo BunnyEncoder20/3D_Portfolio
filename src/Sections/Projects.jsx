@@ -30,7 +30,7 @@ const Projects = () => {
   return (
     <section id="projects" className="c-space my-20">
       <p className="head-text">
-        My Works
+        My Recent Projects
       </p>
 
       <div className="grid lg:grid-cols-2 grid-cols-1 mt-12 gap-5 w-full">
