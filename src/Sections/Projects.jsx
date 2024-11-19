@@ -28,7 +28,7 @@ const Projects = () => {
   };
 
   return (
-    <section className="c-space my-20">
+    <section id="projects" className="c-space my-20">
       <p className="head-text">
         My Works
       </p>

@@ -25,7 +25,7 @@ const Footer = () => {
           <div className="social-icon">
             <img
               src="/assets/linkedin.png"
-              alt="github"
+              alt="LinkedIn"
               className="w-1/2 h-1/2"
             />
           </div>
