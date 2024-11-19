@@ -2,7 +2,10 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <section id="socials" className="c-space pt-7 pb-3 border-t border-black-300 flex justify-between items-center flex-wrap gap-5">
+    <section
+      id="socials"
+      className="c-space pt-7 pb-3 border-t border-black-300 flex justify-between items-center flex-wrap gap-5"
+    >
       <div className="text-white-500 flex gap-2">
         <p>Terms and Conditions</p>
         <p>|</p>
@@ -21,7 +24,10 @@ const Footer = () => {
           </div>
         </a>
 
-        <a href="https://www.linkedin.com/in/varun-verma-1547442a5/" target="_blank">
+        <a
+          href="https://www.linkedin.com/in/varun-verma-1547442a5/"
+          target="_blank"
+        >
           <div className="social-icon">
             <img
               src="/assets/linkedin.png"
@@ -31,7 +37,10 @@ const Footer = () => {
           </div>
         </a>
 
-        <a href="https://takeuforward.org/plus/profile/BunnyEncoder" target="_blank">
+        <a
+          href="https://takeuforward.org/plus/profile/BunnyEncoder"
+          target="_blank"
+        >
           <div className="social-icon">
             <svg
               width="126"
@@ -71,7 +80,7 @@ const Footer = () => {
           </div>
         </a>
       </div>
-	  <p className="text-white-500">©️ 2024 Varun Verma. On the Grind 💪</p>
+      <p className="text-white-500">©️ 2024 Varun Verma. On the Grind 💪</p>
     </section>
   );
 };

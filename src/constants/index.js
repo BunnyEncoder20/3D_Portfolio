@@ -10,9 +10,9 @@ export const navLinks = [
     href: "#about",
   },
   {
-	id: 3,
-	name: "Projects",
-	href: "#projects",
+    id: 3,
+    name: "Projects",
+    href: "#projects",
   },
   {
     id: 4,
@@ -25,10 +25,10 @@ export const navLinks = [
     href: "#contact",
   },
   {
-	id: 6,
-	name: "Socials",
-	href: "#socials"
-  }
+    id: 6,
+    name: "Socials",
+    href: "#socials",
+  },
 ];
 
 export const clientReviews = [
