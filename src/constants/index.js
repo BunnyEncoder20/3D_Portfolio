@@ -85,8 +85,8 @@ export const myProjects = [
     tags: [
       {
         id: 1,
-        name: "React.js",
-        path: "/assets/react.svg",
+        name: "Next.js",
+        path: "/assets/nextjs.png",
       },
       {
         id: 2,
@@ -95,13 +95,13 @@ export const myProjects = [
       },
       {
         id: 3,
-        name: "TypeScript",
-        path: "/assets/typescript.png",
+        name: "Shadcn",
+        path: "/assets/shadcnui.png",
       },
       {
         id: 4,
-        name: "Framer Motion",
-        path: "/assets/framer.png",
+        name: "Convex",
+        path: "/assets/convex.png",
       },
     ],
   },
@@ -255,10 +255,46 @@ export const myProjects = [
       {
         id: 4,
         name: "Framer Motion",
-        path: "/assets/framer.png",
-      },
+        path: "/assets/framer.pn",
+     },
     ],
   },
+  {
+    title: "YC Directory",
+    desc: "YC Directory is a Next.js 15 platform platform for showcasing startup ideas. Users can explore, showcase, and gain exposure for their pitches in a seamless and minimalistic environment.",
+    subdesc: "Built with React 19, Next.js 15, Sanity (CMS), and Sentry. With dynamic features such as GitHub Auth, live content updates, and admin-curated 'Editor Picks', YC Directory combines functionality with clean design for an intuitive and modern experience.",
+    href: "https://yc-dictionary.vercel.app",
+    texture: "/textures/project/project6.mp4",
+    logo: "/assets/project-logo6.png",
+    logoStyle: {
+      backgroundColor: "#F7F7F8",
+      border: "0.2px solid #E2E8F0",
+      boxShadow: "0px 0px 40px 0px #CBD5E04D"
+    },
+    spotlight: "/assets/spotlight3.png",
+    tags: [
+      {
+        id: 1,
+        name: "Next.js",
+        path: "/assets/nextjs.png"
+      },
+      {
+        id: 2,
+        name: "Sentry",
+        path: "/assets/sentry.png"
+      },
+      {
+        id: 3,
+        name: "TailwindCSS",
+        path: "/assets/tailwindcss.png"
+      },
+      {
+        id: 4,
+        name: "Shadcn",
+        path: "/assets/shadcnui.png"
+      }
+    ]
+  }
 ];
 
 export const calculateSizes = (isSmall, isMobile, isTablet) => {
