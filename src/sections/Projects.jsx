@@ -74,8 +74,11 @@ const Projects = () => {
             {/* Project Technologies Logos */}
             <div className="flex items-center gap-3">
               {currentProject.tags.map((tag, index) => (
-                <div key={index} className="tech-logo">
+                <div key={index} className="tech-logo relative group">
                   <img src={tag.path} alt={tag.name} />
+                  <div className="absolute left-1/2 bottom-full mb-2 w-max -translate-x-1/2 rounded-md bg-gray-800 px-2 py-1 text-sm text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                    {tag.name}
+                  </div>
                 </div>
               ))}
             </div>

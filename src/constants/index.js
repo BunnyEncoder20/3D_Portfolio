@@ -103,6 +103,11 @@ export const myProjects = [
         name: "Convex",
         path: "/assets/convex.png",
       },
+      {
+        id: 5,
+        name: "Clerk",
+        path: "/assets/clerk.png",
+      },
     ],
   },
   {
@@ -111,7 +116,7 @@ export const myProjects = [
       "LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. As an enhanced version of Google Docs, It supports millions of collaborators simultaneously, ensuring that every change is captured instantly and accurately.",
     subdesc:
       "With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.",
-    href: "https://www.youtube.com/watch?v=y5vE8y_f_OM",
+    href: "https://live-collaborative-docs.vercel.app/sign-in",
     texture: "/textures/project/project2.mp4",
     logo: "/assets/project-logo2.png",
     logoStyle: {
@@ -123,8 +128,13 @@ export const myProjects = [
     tags: [
       {
         id: 1,
-        name: "React.js",
-        path: "/assets/react.svg",
+        name: "Next.js",
+        path: "/assets/nextjs.png",
+      },
+      {
+        id: 3,
+        name: "Shadcn UI",
+        path: "/assets/shadcnui.png",
       },
       {
         id: 2,
@@ -132,14 +142,14 @@ export const myProjects = [
         path: "assets/tailwindcss.png",
       },
       {
-        id: 3,
-        name: "TypeScript",
-        path: "/assets/typescript.png",
+        id: 4,
+        name: "Clerk",
+        path: "/assets/clerk.png",
       },
       {
-        id: 4,
-        name: "Framer Motion",
-        path: "/assets/framer.png",
+        id: 5,
+        name: "Liveblocks",
+        path: "/assets/liveblocks.png",
       },
     ],
   },
@@ -255,7 +265,7 @@ export const myProjects = [
       {
         id: 4,
         name: "Framer Motion",
-        path: "/assets/framer.pn",
+        path: "/assets/framer.png",
      },
     ],
   },
@@ -279,20 +289,25 @@ export const myProjects = [
         path: "/assets/nextjs.png"
       },
       {
+        id: 5,
+        name: "TypeScript",
+        path: "/assets/typescript.png",
+      },
+      {
         id: 2,
         name: "Sentry",
         path: "/assets/sentry.png"
+      },
+      {
+        id: 4,
+        name: "Shadcn",
+        path: "/assets/shadcnui.png"
       },
       {
         id: 3,
         name: "TailwindCSS",
         path: "/assets/tailwindcss.png"
       },
-      {
-        id: 4,
-        name: "Shadcn",
-        path: "/assets/shadcnui.png"
-      }
     ]
   }
 ];
