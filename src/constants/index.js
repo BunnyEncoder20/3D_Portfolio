@@ -151,6 +151,11 @@ export const myProjects = [
         name: "Liveblocks",
         path: "/assets/liveblocks.png",
       },
+      {
+        id: 6,
+        name: "Sentry",
+        path: "/assets/sentry.png",
+      },
     ],
   },
   {
@@ -294,11 +299,6 @@ export const myProjects = [
         path: "/assets/typescript.png",
       },
       {
-        id: 2,
-        name: "Sentry",
-        path: "/assets/sentry.png"
-      },
-      {
         id: 4,
         name: "Shadcn",
         path: "/assets/shadcnui.png"
@@ -307,6 +307,11 @@ export const myProjects = [
         id: 3,
         name: "TailwindCSS",
         path: "/assets/tailwindcss.png"
+      },
+      {
+        id: 2,
+        name: "Sentry",
+        path: "/assets/sentry.png"
       },
     ]
   }
