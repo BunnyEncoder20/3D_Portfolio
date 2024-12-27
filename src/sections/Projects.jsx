@@ -29,9 +29,7 @@ const Projects = () => {
 
   return (
     <section id="projects" className="c-space my-20">
-      <p className="head-text">
-        My Recent Projects
-      </p>
+      <p className="head-text">My Recent Projects</p>
 
       <div className="grid lg:grid-cols-2 grid-cols-1 mt-12 gap-5 w-full">
         {/* Project Left side container */}
@@ -62,12 +60,8 @@ const Projects = () => {
             <p className="text-white text-2xl font-semibold animatedText">
               {currentProject.title}
             </p>
-            <p className="animatedText">
-              {currentProject.desc}
-            </p>
-            <p className="animatedText">
-              {currentProject.subdesc}
-            </p>
+            <p className="animatedText">{currentProject.desc}</p>
+            <p className="animatedText">{currentProject.subdesc}</p>
           </div>
 
           <div className="flex items-center justify-between flex-wrap gap-5">
@@ -113,7 +107,7 @@ const Projects = () => {
             </button>
             <button
               className="arrow-btn"
-              onClick={() => handleNavigation("previous")}
+              onClick={() => handleNavigation("next")}
             >
               <img
                 src="/assets/right-arrow.png"
@@ -139,10 +133,7 @@ const Projects = () => {
             </Center>
 
             {/* Orbit controls */}
-            <OrbitControls
-              maxPolarAngle={Math.PI / 2}
-              enableZoom={false}
-            />
+            <OrbitControls maxPolarAngle={Math.PI / 2} enableZoom={false} />
           </Canvas>
         </div>
       </div>

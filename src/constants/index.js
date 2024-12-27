@@ -69,8 +69,7 @@ export const clientReviews = [
 export const myProjects = [
   {
     title: "Podcastr - AI Podcast Platform",
-    desc:
-      "Podcastr is a revolutionary Software-as-a-Service platform that transforms the way podcasts are created. With advanced AI-powered features like text-to-multiple-voices functionality, it allows creators to generate diverse voiceovers from a single text input.",
+    desc: "Podcastr is a revolutionary Software-as-a-Service platform that transforms the way podcasts are created. With advanced AI-powered features like text-to-multiple-voices functionality, it allows creators to generate diverse voiceovers from a single text input.",
     subdesc:
       "Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript, and Convex, Podcastr is designed for optimal performance and scalability.",
     href: "https://podcaster-sandy.vercel.app",
@@ -112,8 +111,7 @@ export const myProjects = [
   },
   {
     title: "LiveDoc - Real-Time Google Docs Clone",
-    desc:
-      "LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. As an enhanced version of Google Docs, It supports millions of collaborators simultaneously, ensuring that every change is captured instantly and accurately.",
+    desc: "LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. As an enhanced version of Google Docs, It supports millions of collaborators simultaneously, ensuring that every change is captured instantly and accurately.",
     subdesc:
       "With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.",
     href: "https://live-collaborative-docs.vercel.app/sign-in",
@@ -160,8 +158,7 @@ export const myProjects = [
   },
   {
     title: "CarePulse - Health Management System",
-    desc:
-      "An innovative healthcare platform designed to streamline essential medical processes. It simplifies patient registration, appointment scheduling, and medical record management, providing a seamless experience for both healthcare providers and patients.",
+    desc: "An innovative healthcare platform designed to streamline essential medical processes. It simplifies patient registration, appointment scheduling, and medical record management, providing a seamless experience for both healthcare providers and patients.",
     subdesc:
       "With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.",
     href: "https://www.youtube.com/watch?v=lEflo_sc82g",
@@ -200,8 +197,7 @@ export const myProjects = [
   },
   {
     title: "Horizon - Online Banking Platform",
-    desc:
-      "Horizon is a comprehensive online banking platform that offers users a centralized finance management dashboard. It allows users to connect multiple bank accounts, monitor real-time transactions, and seamlessly transfer money to other users.",
+    desc: "Horizon is a comprehensive online banking platform that offers users a centralized finance management dashboard. It allows users to connect multiple bank accounts, monitor real-time transactions, and seamlessly transfer money to other users.",
     subdesc:
       "Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.",
     href: "https://www.youtube.com/watch?v=PuOVqP_cjkE",
@@ -237,61 +233,66 @@ export const myProjects = [
     ],
   },
   {
-    title: "Imaginify - AI Photo Manipulation App",
-    desc:
-      "Imaginify is a groundbreaking Software-as-a-Service application that empowers users to create stunning photo manipulations using AI technology. With features like AI-driven image editing, a payments system, and a credits-based model.",
+    title: "StoreIt - Google Drive Clone",
+    desc: "StoreIt is a robust cloud storage application designed to mimic the functionality of Google Drive. It allows users to upload, manage, and share files securely with a user-friendly interface and efficient backend services.",
     subdesc:
-      "Built with Next.js 14, Cloudinary AI, Clerk, and Stripe, Imaginify combines cutting-edge technology with a user-centric approach. It can be turned into a side income or even a full-fledged business.",
-    href: "https://www.youtube.com/watch?v=Ahwoks_dawU",
-    texture: "/textures/project/project5.mp4",
-    logo: "/assets/project-logo5.png",
+      "Built with Next.js and Appwrite, TailwindCSS and Type safety, StoreIt provides seamless file storage, sharing, and management. It’s an ideal solution for personal or business file storage needs.",
+    href: "https://store-opc832acx-varun-vermas-projects.vercel.app/sign-in",
+    texture: "/textures/project/Project7.mp4",
+    logo: "/assets/project-logo7.svg",
     logoStyle: {
-      backgroundColor: "#1C1A43",
-      border: "0.2px solid #252262",
-      boxShadow: "0px 0px 60px 0px #635BFF4D",
+      backgroundColor: "#1A1A1A",
+      border: "0.2px solid #2A2A2A",
+      boxShadow: "0px 0px 60px 0px #3498DB4D",
     },
-    spotlight: "/assets/spotlight5.png",
+    spotlight: "/assets/spotlight1.png",
     tags: [
       {
         id: 1,
-        name: "React.js",
-        path: "/assets/react.svg",
+        name: "Next.js",
+        path: "/assets/nextjs.png",
       },
       {
         id: 2,
-        name: "TailwindCSS",
-        path: "assets/tailwindcss.png",
+        name: "Appwrite",
+        path: "/assets/appwrite.png",
       },
       {
         id: 3,
-        name: "TypeScript",
-        path: "/assets/typescript.png",
+        name: "TailwindCSS",
+        path: "/assets/tailwindcss.png",
       },
       {
         id: 4,
-        name: "Framer Motion",
-        path: "/assets/framer.png",
-     },
+        name: "Shadcn",
+        path: "/assets/shadcnui.png",
+      },
+      {
+        id: 5,
+        name: "TypeScript",
+        path: "/assets/typescript.png",
+      },
     ],
   },
   {
     title: "YC Directory",
     desc: "YC Directory is a Next.js 15 platform platform for showcasing startup ideas. Users can explore, showcase, and gain exposure for their pitches in a seamless and minimalistic environment.",
-    subdesc: "Built with React 19, Next.js 15, Sanity (CMS), and Sentry. With dynamic features such as GitHub Auth, live content updates, and admin-curated 'Editor Picks', YC Directory combines functionality with clean design for an intuitive and modern experience.",
+    subdesc:
+      "Built with React 19, Next.js 15, Sanity (CMS), and Sentry. With dynamic features such as GitHub Auth, live content updates, and admin-curated 'Editor Picks', YC Directory combines functionality with clean design for an intuitive and modern experience.",
     href: "https://yc-dictionary.vercel.app",
     texture: "/textures/project/project6.mp4",
     logo: "/assets/project-logo6.png",
     logoStyle: {
       backgroundColor: "#F7F7F8",
       border: "0.2px solid #E2E8F0",
-      boxShadow: "0px 0px 40px 0px #CBD5E04D"
+      boxShadow: "0px 0px 40px 0px #CBD5E04D",
     },
     spotlight: "/assets/spotlight3.png",
     tags: [
       {
         id: 1,
         name: "Next.js",
-        path: "/assets/nextjs.png"
+        path: "/assets/nextjs.png",
       },
       {
         id: 5,
@@ -301,20 +302,20 @@ export const myProjects = [
       {
         id: 4,
         name: "Shadcn",
-        path: "/assets/shadcnui.png"
+        path: "/assets/shadcnui.png",
       },
       {
         id: 3,
         name: "TailwindCSS",
-        path: "/assets/tailwindcss.png"
+        path: "/assets/tailwindcss.png",
       },
       {
         id: 2,
         name: "Sentry",
-        path: "/assets/sentry.png"
+        path: "/assets/sentry.png",
       },
-    ]
-  }
+    ],
+  },
 ];
 
 export const calculateSizes = (isSmall, isMobile, isTablet) => {
