@@ -84,7 +84,7 @@ export const myProjects = [
     tags: [
       {
         id: 1,
-        name: "Next.js",
+        name: "Next.js 15",
         path: "/assets/nextjs.png",
       },
       {
@@ -126,7 +126,7 @@ export const myProjects = [
     tags: [
       {
         id: 1,
-        name: "Next.js",
+        name: "Next.js 15",
         path: "/assets/nextjs.png",
       },
       {
@@ -248,8 +248,13 @@ export const myProjects = [
     spotlight: "/assets/spotlight1.png",
     tags: [
       {
+        id: 6,
+        name: "React 19",
+        path: "/assets/react.svg",
+      },
+      {
         id: 1,
-        name: "Next.js",
+        name: "Next.js 15",
         path: "/assets/nextjs.png",
       },
       {
@@ -266,11 +271,6 @@ export const myProjects = [
         id: 4,
         name: "Shadcn",
         path: "/assets/shadcnui.png",
-      },
-      {
-        id: 5,
-        name: "TypeScript",
-        path: "/assets/typescript.png",
       },
     ],
   },
@@ -291,7 +291,7 @@ export const myProjects = [
     tags: [
       {
         id: 1,
-        name: "Next.js",
+        name: "Next.js 15",
         path: "/assets/nextjs.png",
       },
       {
