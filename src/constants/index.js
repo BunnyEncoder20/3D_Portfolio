@@ -161,7 +161,7 @@ export const myProjects = [
     desc: "An innovative healthcare platform designed to streamline essential medical processes. It simplifies patient registration, appointment scheduling, and medical record management, providing a seamless experience for both healthcare providers and patients.",
     subdesc:
       "With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.",
-    href: "https://www.youtube.com/watch?v=lEflo_sc82g",
+    href: "https://care-pulse-rouge-chi.vercel.app",
     texture: "/textures/project/project3.mp4",
     logo: "/assets/project-logo3.png",
     logoStyle: {
@@ -175,8 +175,8 @@ export const myProjects = [
     tags: [
       {
         id: 1,
-        name: "React.js",
-        path: "/assets/react.svg",
+        name: "Next.js",
+        path: "/assets/nextjs.png",
       },
       {
         id: 2,
@@ -184,14 +184,19 @@ export const myProjects = [
         path: "assets/tailwindcss.png",
       },
       {
+        id: 5,
+        name: "Appwrite",
+        path: "/assets/appwrite.png",
+      },
+      {
         id: 3,
-        name: "TypeScript",
-        path: "/assets/typescript.png",
+        name: "Twilio",
+        path: "/assets/twilio.png",
       },
       {
         id: 4,
-        name: "Framer Motion",
-        path: "/assets/framer.png",
+        name: "Sentry",
+        path: "/assets/sentry.png",
       },
     ],
   },
@@ -290,14 +295,14 @@ export const myProjects = [
     spotlight: "/assets/spotlight3.png",
     tags: [
       {
+        id: 5,
+        name: "React 19",
+        path: "/assets/react.svg",
+      },
+      {
         id: 1,
         name: "Next.js 15",
         path: "/assets/nextjs.png",
-      },
-      {
-        id: 5,
-        name: "TypeScript",
-        path: "/assets/typescript.png",
       },
       {
         id: 4,
