@@ -1,11 +1,34 @@
-# React + Vite
+# My 3D Portfolio- Introduction
 
-This template provides a minimal setup to get React working in Vite with HMR and
-some ESLint rules.
+- Built with React.js for handling the user interface, Three.js for rendering 3D elements, and styled with TailwindCSS, the 3D Minimalistic portfolio is a website project. The primary goal is to demonstrate the my skills in a unique manner that creates a lasting impact.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md)
-  uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc)
-  uses [SWC](https://swc.rs/) for Fast Refresh
+- Node.js
+- React.js
+- Three.js
+- React Three Fiber
+- React Three Drei
+- Email JS
+- Vite
+- Tailwind CSS
+
+## Features
+
+- **Immersive Hero:** An eye-catching 3D hacker room that responds to mouse movements, surrounded by animated mini-models.
+
+- **Interactive About Me:** A sleek bento grid layout featuring personal info, a 3D globe pinpointing location, tech stack icons, and a one-click email copy option.
+
+- **Dynamic Project Showcase:** Browse through projects while watching live demos inside a 3D computer model, seamlessly switching between different projects.
+
+- **Engaging Experience Timeline:** Hover over career milestones to trigger interactive 3D animations that bring your professional journey to life.
+
+- **Client Testimonials:** A dedicated section highlighting satisfied clients and their feedback.
+
+- **Easy Contact Form:** A user-friendly email form for visitors to reach out directly from your portfolio.
+
+- **Clean Footer:** A minimalist design featuring social media links for easy networking.
+
+- **Fully Responsive:** Optimized layout ensuring a smooth experience across all devices, from desktop to mobile.
+
+and many more, including code architecture and reusability
