@@ -36,7 +36,7 @@ const Contact = () => {
           to_email: "varun.verma2024@gmailcom",
           message: form.message,
         },
-        "86cKHqKsf__-wyvus",
+        "86cKHqKsf__-wyvus"
       );
 
       setLoading(false);
@@ -62,9 +62,7 @@ const Contact = () => {
         />
 
         <div className="contact-container">
-          <h3 className="head-text">
-            Connect with me
-          </h3>
+          <h3 className="head-text">Connect with me</h3>
           <p className="text-lg text-white-600 mt-3">
             Whether your're looking to build a new website, improve your
             exisiting platform, or bring a unique project to life, I'm here to
@@ -85,7 +83,7 @@ const Contact = () => {
                 name="name"
                 value={form.name}
                 onChange={handleChange}
-                placeholder="Batman"
+                placeholder="Bruce Wayne"
                 required
               />
             </label>
@@ -98,7 +96,7 @@ const Contact = () => {
                 name="email"
                 value={form.email}
                 onChange={handleChange}
-                placeholder="wannabe_batman@gmail.com"
+                placeholder="not_batman@email.com"
                 required
               />
             </label>
@@ -118,7 +116,7 @@ const Contact = () => {
             </label>
 
             <button className="field-btn" type="submit" disabled={loading}>
-              {loading ? "Sending..." : "Send Message"}
+              {loading ? "Sending..." : "Send Email"}
 
               <img
                 src="/assets/arrow-up.png"

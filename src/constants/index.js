@@ -20,6 +20,11 @@ export const navLinks = [
     href: "#work",
   },
   {
+    id: 7,
+    name: "Reviews",
+    href: "#clients",
+  },
+  {
     id: 5,
     name: "Contact",
     href: "#contact",
@@ -28,41 +33,6 @@ export const navLinks = [
     id: 6,
     name: "Socials",
     href: "#socials",
-  },
-];
-
-export const clientReviews = [
-  {
-    id: 1,
-    name: "Emily Johnson",
-    position: "Marketing Director at GreenLeaf",
-    img: "assets/review1.png",
-    review:
-      "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
-  },
-  {
-    id: 2,
-    name: "Mark Rogers",
-    position: "Founder of TechGear Shop",
-    img: "assets/review2.png",
-    review:
-      "Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.",
-  },
-  {
-    id: 3,
-    name: "John Dohsas",
-    position: "Project Manager at UrbanTech ",
-    img: "assets/review3.png",
-    review:
-      "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
-  },
-  {
-    id: 4,
-    name: "Ether Smith",
-    position: "CEO of BrightStar Enterprises",
-    img: "assets/review4.png",
-    review:
-      "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.",
   },
 ];
 
@@ -302,7 +272,7 @@ export const myProjects = [
       border: "0.2px solid #E2E8F0",
       boxShadow: "0px 0px 40px 0px #CBD5E04D",
     },
-    spotlight: "/assets/spotlight3.png",
+    spotlight: "/assets/spotlight5.png",
     tags: [
       {
         id: 5,
@@ -398,5 +368,44 @@ export const workExperiences = [
       "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
     icon: "/assets/notion.svg",
     animation: "salute",
+  },
+];
+
+export const clientReviews = [
+  {
+    id: 1,
+    name: "Siddharth Vasaikar",
+    position: "Project Management at Larsen & Toubro",
+    img: "assets/SV.png",
+    ln_link: "https://www.linkedin.com/in/siddhant-vasaikar/",
+    review:
+      "Varun consistently demonstrated exceptional expertise in his work, showcasing intellectual depth and a captivating personality. His in-depth knowledge in web technologies and AI/ML aspects of development was particularly noteworthy. Additionally, he engaged meaningfully with the team, contributing significantly to multiple project development. He proved to be a valuable asset to the organization.",
+  },
+  {
+    id: 2,
+    name: "Sakshi Kesharwani",
+    position: "Software Engineer at Larsen & Toubro",
+    img: "assets/SK.png",
+    ln_link: "https://www.linkedin.com/in/sakshi-kesharwani-96567421a/",
+    review:
+      "Varun is a professional with exceptional out-of-the-box thinking and comprehensive subject matter expertise. Collaborating with him was a valuable learning experience, as he consistently demonstrated a results-oriented approach and an unwavering commitment to completing tasks efficiently. His determination and focus make him a reliable and resourceful team member.",
+  },
+  {
+    id: 3,
+    name: "Tarun Verma",
+    position: "Business Consultant at Bain & Company",
+    img: "assets/TV.png",
+    ln_link: "https://www.linkedin.com/in/tarunverma2003/",
+    review:
+      "I can’t say enough good things about Varun. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
+  },
+  {
+    id: 4,
+    name: "Soma Kumari",
+    position: "SDE at Livlong 365",
+    img: "assets/SM.png",
+    ln_link: "https://www.linkedin.com/in/somya-kumari-5921081a6/",
+    review:
+      "Varun is a skilled, diligent, and innovative professional with experience in developing fast and secure server-side applications and creating APIs. He excels at brainstorming and developing complex applications. He consistently demonstrates a strong work ethic and a proactive approach to solving challenges encountered during development.",
   },
 ];
