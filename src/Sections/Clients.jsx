@@ -14,9 +14,7 @@ const Clients = () => {
           <div key={id} className="client-review">
             {/* review */}
             <div>
-              <p className="text-white font-light italic">
-                &quot;{review}&quot;
-              </p>
+              <p className="text-white font-light">&quot;{review}&quot;</p>
             </div>
 
             {/* content */}

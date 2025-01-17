@@ -341,32 +341,32 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
 export const workExperiences = [
   {
     id: 1,
-    name: "Framer",
-    pos: "Lead Web Developer",
-    duration: "2022 - Present",
+    name: "Larsen & Toubro",
+    pos: "Project Intern",
+    duration: "June 2024 - Sept 2024",
     title:
-      "Framer serves as my go-to tool for creating interactive prototypes. I use it to bring designs to  life, allowing stakeholders to experience the user flow and interactions before development.",
-    icon: "/assets/framer.svg",
+      "Assisted upper management to upgrade manual testing process of internal websites to automated testing using Python-PlaywrightCaptured, report and rectified errors of internal website and API endpoints, increasing reliability of applications. Collaborated with various departments to build and deploy AI Server. Developed API endpoints for processing and returning dataAutomated website functionality checks during disaster recovery exercises, significantly reducing exercise durations.",
+    icon: "/assets/WX1.png",
     animation: "victory",
   },
   {
     id: 2,
-    name: "Figma",
-    pos: "Web Developer",
-    duration: "2020 - 2022",
+    name: "Goolge Cloud Computing Program",
+    pos: "GCC Program Course",
+    duration: "May 2023 - July 2023",
     title:
-      "Figma is my collaborative design platform of choice. I utilize it to work seamlessly with team members and clients, facilitating real-time feedback and design iterations. Its cloud-based.",
-    icon: "/assets/figma.svg",
+      "Successfully completed a comprehensive certificate course by Google, providing hands-on experience in Google Cloud Computing. Demonstrated exceptional commitment and enthusiasm and graduating in the Top 1%tile of the program among 200+ students. Developed a solid foundation in utilizing Google Cloud services, gaining knowledge and skills in cloud computing technologies",
+    icon: "/assets/WX2.png",
     animation: "clapping",
   },
   {
     id: 3,
-    name: "Notion",
-    pos: "Junior Web Developer",
-    duration: "2019 - 2020",
+    name: "Yenepoya University Mangalore",
+    pos: "Externship - PhD Research Thesis",
+    duration: "Sept 2023 - Dec 2023",
     title:
-      "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
-    icon: "/assets/notion.svg",
+      "Developed a highly automated program using Python to scrape individuals websites and store the data into spreadsheets. Scraped data from multiple protein sequence websites to create a Big data protein dataset to train AI for medical intelligence",
+    icon: "/assets/WX3.png",
     animation: "salute",
   },
 ];

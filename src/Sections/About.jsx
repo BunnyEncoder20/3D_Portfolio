@@ -35,8 +35,8 @@ const About = () => {
               </p>
               <p className="grid-subtext">
                 With a passion for coding, I have honed my skills in{" "}
-                <span className="highlight">Full Stack</span>{" "}
-                development with a focus on backend technologies.
+                <span className="highlight">Full Stack</span> development with a
+                focus on backend technologies.
               </p>
             </div>
           </div>
@@ -53,10 +53,9 @@ const About = () => {
             <div>
               <p className="grid-headtext">Tech Stack</p>
               <p className="grid-subtext">
-                I spealize in <span className="highlight">Javascript</span> and
-                {" "}
-                <span className="highlight">Python</span>{" "}
-                with a experience in MERN stack applications.
+                I spealize in <span className="highlight">Javascript</span> and{" "}
+                React with a experience in{" "}
+                <span className="highlight">Next.js</span> applications.
               </p>
             </div>
           </div>
@@ -77,7 +76,7 @@ const About = () => {
                 bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
                 labelsData={[
                   {
-                    lat: 19.0760,
+                    lat: 19.076,
                     lng: 72.8777,
                     text: "I'm here!",
                     color: "white",
@@ -103,7 +102,7 @@ const About = () => {
                 I’m very flexible with almost all time zones
               </p>
               <p className="grid-subtext">
-                I'm based in Mumbai{" "}
+                I&apos;m based in Mumbai{" "}
                 <span className="highlight">India</span>, open to remote work
                 worldwide.
               </p>
@@ -129,8 +128,8 @@ const About = () => {
             <div>
               <p className="grid-headtext">My passion for CODING</p>
               <p className="grid-subtext">
-                I love solving problems abd building things through code. Coding
-                isn't just my profession, it is my Passion.
+                I love solving problems and building things through code. Coding
+                isn&apos;t just my profession, it is my Passion.
               </p>
             </div>
           </div>
@@ -145,9 +144,7 @@ const About = () => {
               className="w-full md:h-[126px] sm:h=[276px] h-fit object-cover sm:object-top"
             />
             <div className="space-y-2">
-              <p className="grid-subtext text-center">
-                Get my Email
-              </p>
+              <p className="grid-subtext text-center">Get my Email</p>
               <div className="copy-container" onClick={handleCopy}>
                 <img
                   src={hasCopied ? "assets/tick.svg" : "assets/copy.svg"}
