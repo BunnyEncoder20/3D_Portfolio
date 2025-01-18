@@ -408,4 +408,13 @@ export const clientReviews = [
     review:
       "Varun is a skilled, diligent, and innovative professional with experience in developing fast and secure server-side applications and creating APIs. He excels at brainstorming and developing complex applications. He consistently demonstrates a strong work ethic and a proactive approach to solving challenges encountered during development.",
   },
+  {
+    id: 5,
+    name: "Vinayak Agrawal",
+    position: "SDE at TCS",
+    img: "/assets/VA.png",
+    ln_link: "https://www.linkedin.com/in/vinayak-agrawal-vins002/",
+    review:
+      "Working with Varun was inspiring, as he effectively demonstrated the value of teamwork and collaboration in boosting productivity. He is an excellent team player who listens to ideas, incorporates them, and steps into leadership when needed. Varun shares valuable insights on optimizing algorithms, improving program performance, and using tools effectively. His innovative, logical solutions reflect his commitment to understanding business needs and delivering practical results.",
+  },
 ];
