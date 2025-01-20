@@ -411,7 +411,7 @@ export const clientReviews = [
   {
     id: 5,
     name: "Vinayak Agrawal",
-    position: "SDE at TCS",
+    position: "SDE at TCSL",
     img: "/assets/VA.png",
     ln_link: "https://www.linkedin.com/in/vinayak-agrawal-vins002/",
     review:
