@@ -32,3 +32,15 @@
 - **Fully Responsive:** Optimized layout ensuring a smooth experience across all devices, from desktop to mobile.
 
 and many more, including code architecture and reusability
+
+## Project SS
+
+![](./public/project_ss/1.png)
+![](./public/project_ss/2.png)
+![](./public/project_ss/3.png)
+![](./public/project_ss/4.png)
+![](./public/project_ss/8.png)
+![](./public/project_ss/9.png)
+![](./public/project_ss/5.png)
+![](./public/project_ss/6.png)
+![](./public/project_ss/7.png)
