@@ -49,7 +49,7 @@ const Footer = () => {
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <g clip-path="url(#clip0_687_3228)">
+              <g clipPath="url(#clip0_687_3228)">
                 <path
                   d="M0 5.89536H15.3223L9.50286 36H21.7707L27.13 5.89536H42.1221L43.28 0H1.16732L0 5.89536Z"
                   fill="white"

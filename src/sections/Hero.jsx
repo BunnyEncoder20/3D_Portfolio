@@ -8,7 +8,7 @@ import { useMediaQuery } from "react-responsive";
 import HackerRoom from "../components/HackerRoom";
 import HeroCamera from "../components/HeroCamera";
 import CanvasLoader from "../components/CanvasLoader";
-import Target from "../components/Target";
+// import Target from "../components/Target"; // TODO: Fix model URL - Supabase storage inaccessible
 import ReactLogo from "../components/ReactLogo";
 import Cube from "../components/Cube";
 import Rings from "../components/Rings";
@@ -98,7 +98,7 @@ const Hero = () => {
 
             <group>
               {/* Floating Icons */}
-              <Target position={responsive3D.targetPosition} />
+              {/* <Target position={responsive3D.targetPosition} /> */} {/* TODO: Restore when model is available */}
               <ReactLogo position={responsive3D.reactLogoPosition} />
               <Cube position={responsive3D.cubePosition} />
               <Rings position={responsive3D.ringPosition} />
